@@ -15,18 +15,33 @@
         <title>One Love Portraits</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous"><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="styles/home.css">
+        <script src="js/home.js"></script>
     </head>
 
     <body>
         <header>
-            <div class="navContainer">
-                <div class="navContents">
-                    <img src="media/onelovephotography.png" alt="One Love Photography" class="navLogo">
-                    <ul>
-                        <a href="#"><li>Home</li></a>
-                        <a href="#"><li>Contact</li></a>
-                        <a href="#"><li>About</li></a>
-                    </ul>
+            <div class="mobileContainer">
+                <div class="mobileContents">
+                    <a href="javascript:void(0);" onclick="navBar()"><div class="menuBtn"">
+                        <div class="lineOne"></div>
+                        <div class="lineTwo"></div>
+                        <div class="lineThree"></div>
+                    </div></a>
+                    <div class="mobMenu" id="mobMenu">
+                        <ul class="mobNav" id="mobNav">
+                            <a href="#"><li>Home</li></a>
+                            <a href="#"><li>Contact</li></a>
+                            <a href="#"><li>About</li></a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="socialBar">
+                <div class="socialBarContents">
+                    <a href="#"><img src="" alt="">Facebook</a>
+                    <a href="#"><img src="" alt="">Facebook</a>
+                    <a href="#"><img src="" alt="">Facebook</a>
+                    <a href="#"><img src="" alt="">Facebook</a>
                 </div>
             </div>
         </header>

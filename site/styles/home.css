@@ -1,18 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap');
 * {
     box-sizing: border-box;
 }
-.navContents {
-    text-align: center;
+body {
+    background-color: black;
 }
-ul li {
-    display: inline;
-    margin: 5%;
+
+
+/*--------------------------------MOBIL NAV MENU--------------------------------*/
+
+.menuBtn:hover {
+    cursor: pointer;
 }
-a {
+.menuBtn:hover .lineOne {
+    background-color: #c9c900;
+    transform: rotateZ(40deg);
+}
+.menuBtn:hover .lineTwo  {   
+    background-color: #c9c900;
+    transform: translateX(-5px);
+}
+.menuBtn:hover .lineThree {
+    transform: rotateZ(-40deg);
+    background-color: #c9c900;
+}
+
+.lineOne, .lineTwo, .lineThree {
+    background-color: yellow;
+}
+.lineOne {
+    height: 3px;
+    width: 35px;
+    transition: .5s ease-in-out;
+}
+.lineTwo {
+    height: 3px;
+    width: 35px;
+    margin-top: 21%;
+    transition: .5s ease-in-out;
+}
+.lineThree {
+    height: 3px;
+    width: 35px;
+    margin-top: 21.5%;
+    transition: .5s ease-in-out;
+}
+
+.menuBtn {
+    z-index: 1;
+    margin-left: 2%;
+    margin-top: 2%;
+    width: 36px;
+    outline: none;
+}
+.mobMenu ul a {
+    color: rgba(255, 255, 255, 0.541);
     text-decoration: none;
 }
-.navLogo {
-    width: 10%;
-    margin: 2%;
-    margin-left: 3%;
+.mobMenu ul li {
+    display: block;
 }
+.mobMenu {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    text-align: center;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0);
+    overflow: hidden;
+    z-index: -1;
+    transform: translateX(-100%);
+    transition: .5s linear;
+    border: 1px solid yellow;
+}
+.mobMenuOpen {
+    transform: translateX(0%);
+}
+ul.mobNav {
+    margin-top: 15%;
+
+}
+ul.mobNav a li {
+    margin: 2%;
+    font-family: 'Akaya Telivigala', cursive;
+    font-size: 35px;
+    width: 10%;
+    border: 1px solid rgba(255, 255, 0, 0.158);
+    border-top-left-radius: 30px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 30px;
+    margin-left: 45%;
+}
+ul.mobNav a li {
+    transition: .2s linear;
+}
+ul.mobNav a li:hover {
+    transform: rotateZ(5deg);
+    color: yellow;
+    border: 1px solid rgba(255, 255, 0, 0.527);
+    box-shadow: 0px 0px 5px 0px yellow;
+}
+
+/*--------------------------------MOBIL NAV MENU--------------------------------*/
