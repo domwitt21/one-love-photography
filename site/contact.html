@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no">
+    <meta name="rating" content="General">
+    <meta name="expires" content="never">
+    <meta name="language" content="English, EN">
+    <meta name="robots" content="index, follow">
+    <link rel="icon" href="media/onelovephotography.png">
+    <meta name="description" content="Welcome to One Love Portraits.">
+    <meta name="keywords"
+        content="Web Development,CSS,JavaScript, HTML5, session storage, html5 local storage, web design, design, website, custom website, microsoft, office 365, dominic, witt, dominic witt, Dominic Witt, sony, ps5, one x, xbox one x, xbox series x, xbox">
+    <meta name="author" content="Dominic Witt">
+    <title>One Love Portraits - Contact</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="styles/contact.css">
+    <script src="js/home.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="mobileContainer">
+            <div class="mobileContents">
+                <a href="javascript:void(0);" onclick="navBar()">
+                    <div class="menuBtn"">
+                        <div class=" lineOne"></div>
+                    <div class="lineTwo"></div>
+                    <div class="lineThree"></div>
+            </div></a>
+            <div class="mobMenu" id="mobMenu">
+                <button type="button" class="btn-close" onclick="navBar()" aria-label="Close"></button>
+                <ul class="mobNav" id="mobNav">
+                    <a href="home.html">
+                        <li>Home</li>
+                    </a>
+                    <a href="contact.html">
+                        <li>Contact</li>
+                    </a>
+                    <a href="about.html">
+                        <li>About</li>
+                    </a>
+                </ul>
+            </div>
+        </div>
+        </div>
+    </header>
+
+    <div class="socialBar">
+        <div class="socialBarContents">
+            <a href="#"><img src="" alt="">Twitter</a>
+            <a href="#"><img src="" alt="">Facebook</a>
+            <a href="#"><img src="" alt="">Instagram</a>
+        </div>
+    </div>
+
+    <div class="formLabel">
+        <h1>Contact Form</h1>
+    </div>
+
+    <form class="was-validated formMain" action="formsubmission.php" method="POST" enctype="multipart/form-data" name="emailForm">
+        <div class="col-md-4">
+            <input type="text" class="form-control" id="validationDefault01" name="name" placeholder="First Name" required>
+            <div class="invalid-feedback">Please provide your first name!</div>
+        </div>
+        <div class="col-md-4">
+            <input type="text" class="form-control" id="validationDefault02" name="name" placeholder="Last Name" required>
+            <div class="invalid-feedback">Please provide your last name!</div>
+        </div>
+        <div class="form-group mb-3">
+            <label for="form_email">Email *</label>
+            <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *"
+                required="required" data-error="Valid email is required.">
+            <div class="help-block with-errors"></div>
+        </div>
+        <div class="mb-3">
+            <textarea class="form-control is-invalid" id="validationTextarea" name="message" placeholder="Describe your needs"
+                required></textarea>
+        </div>
+        <div class="mb-3">
+            <select class="form-select" name="products" required aria-label="select example">
+                <option value="">Photography Packages</option>
+                <option value="1">Package One</option>
+                <option value="2">Package Two</option>
+                <option value="3">Package Three</option>
+            </select>
+            <div class="invalid-feedback">Please select a package!</div>
+        </div>
+    
+        <div class="mb-3 mb-33">
+            <button class="btn btn-primary submitBtn" type="submit">Submit!</button>
+        </div>
+    </form>
+
+    <footer>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
