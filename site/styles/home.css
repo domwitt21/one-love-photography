@@ -109,9 +109,6 @@ ul.mobNav a li:hover {
 
 /*--------------------------------MOBIL NAV MENU--------------------------------*/
 
-.carousel {
-    z-index: -1;
-}
 .socialBar {
     text-align: center;
     position: absolute;
@@ -143,52 +140,113 @@ ul.mobNav a li:hover {
     margin: 2%;
     background-color: #D93C40;
 }
-.carousel-item {
-    width: 25%;
-    margin-left: 37%;
-    z-index: -1;
-}
-.carousel-caption {
-    color: #D93C40;
-}
-.carousel-control-prev {
-    z-index: 1;
-}
-.carousel-control-next {
-    z-index: 1;
-}
 .mainContainer {
     text-align: center;
 }
 .mainContents {
     color: #D93C40;
     z-index: -1;
+    margin-left: 1%;
 }
 .mainContents h1 {
-    font-family: 'Montserrat', cursive;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
     font-weight: 200;
     font-size: 50px;
     margin-top: 5%;
 }
 .mainContents sub {
-    font-family: 'Montserrat', cursive;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
     font-size: 19px;
     font-weight: 200;
     color: #D93C40;
 }
-.featurette-divider {
-    background-color: #D93C40;
-    margin: 5rem;
-    width: 90%;
-}
 
 #bgImgMain {
     width: 50%;
-    position: fixed;
-    top: 50%;
-    left: 22%;
+    position: absolute;
+    top: 60%;
+    left: 25%;
     z-index: -1;
+    display: none;
 }
+.mainContents h1 {
+    border-bottom: 15px;
+}
+
+.navMenu {
+    z-index: 1;
+    text-align: center;
+}
+.menuNavMain li {
+    text-decoration: none;
+    display: inline-flex;
+    list-style: none;
+    text-align: center;
+    margin: 5%;
+    margin-top: 2%;
+    margin-bottom: 1%;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+}
+.menuNavMain a {
+    color: #D93C40;
+    text-decoration: none;
+}
+.menuNavMain a:hover {
+    color: #832326;
+    transform: rotateZ(15deg);
+    transition: ease-in .2s;
+}
+#lineMain {
+    background-color: #d93c413b;
+    width: 40%;
+    height: 1px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+}
+#lineMainTwo {
+    background-color: #d93c413b;
+    width: 40%;
+    height: 1px;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 1;
+}
+.rightImgContainer {
+    width: 25%;
+    overflow: hidden;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+}
+.leftImgContainer {
+    width: 25%;
+    overflow: hidden;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.bioCardContainer {
+    border: 2px groove #d93c4165;
+    border-radius: 85px;
+    width: 35%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+    overflow: hidden;
+}
+.bioCardContents {
+    background-image: url(/media/trees.jpg);
+    background-size: 100%;
+}
+.bioLogo img {
+    width: 25%;
+    border-radius: 100%;
+    margin: 10%;
+}
+
 
 @media screen and (max-width: 4000px) {
     .menuBtn {
