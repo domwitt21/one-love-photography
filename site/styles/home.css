@@ -8,7 +8,7 @@
     box-sizing: border-box;
 }
 body {
-    background-color: #ffffff;
+    background-color: rgb(15, 15, 15);
     z-index: 1;
 }
 
@@ -107,7 +107,7 @@ ul.mobNav a li:hover {
     width: 5%;
 }
 
-/*--------------------------------MOBIL NAV MENU--------------------------------*/
+/*--------------------------------MOBIL NAV MENU END--------------------------------*/
 
 .socialBar {
     text-align: center;
@@ -115,19 +115,20 @@ ul.mobNav a li:hover {
     top: 0;
     padding: .2%;
     width: 100%;
-    background-color: #1d1b12;
+    background-color: #161616;
     height: 34px;
     box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.363);
+    display: none;
 }
 .socialBarContents a {
     text-decoration: none;
-    color: #D93C40;
+    color: #ffee00;
     letter-spacing: 1.5px;
 }
 .socialBarContents a:hover {
-    color: #D93C40;
+    color: #ffee00;
     text-decoration: underline;
-    text-decoration-color: #D93C40;
+    text-decoration-color: #ffee00;
 }
 .socialBarContents a:nth-child(2) {
     margin-left: 2%;
@@ -138,27 +139,30 @@ ul.mobNav a li:hover {
 .btn-close {
     float: right;
     margin: 2%;
-    background-color: #D93C40;
+    background-color: #ffee00;
 }
 .mainContainer {
     text-align: center;
 }
 .mainContents {
-    color: #D93C40;
+    color: #ffee00;
     z-index: -1;
     margin-left: 1%;
+    animation: slideDown 1.5s;
 }
 .mainContents h1 {
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
     font-weight: 200;
     font-size: 50px;
     margin-top: 5%;
+    margin-bottom: 1.5%;
 }
 .mainContents sub {
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
     font-size: 19px;
     font-weight: 200;
-    color: #D93C40;
+    color: #ffee00;
+    animation: slideDown 1.5s;
 }
 
 #bgImgMain {
@@ -169,13 +173,11 @@ ul.mobNav a li:hover {
     z-index: -1;
     display: none;
 }
-.mainContents h1 {
-    border-bottom: 15px;
-}
 
 .navMenu {
     z-index: 1;
     text-align: center;
+    animation: slideDown 1.5s;
 }
 .menuNavMain li {
     text-decoration: none;
@@ -188,29 +190,32 @@ ul.mobNav a li:hover {
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
 }
 .menuNavMain a {
-    color: #D93C40;
+    color: #ffee00;
     text-decoration: none;
 }
 .menuNavMain a:hover {
-    color: #832326;
+    color: #ffee00;
     transform: rotateZ(15deg);
     transition: ease-in .2s;
 }
 #lineMain {
-    background-color: #d93c413b;
+    background-color: #ffee00;
     width: 40%;
     height: 1px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 5%;
+    margin-top: 4%;
+    animation: slideDown 1.5s;
 }
+
 #lineMainTwo {
-    background-color: #d93c413b;
+    background-color: #ffee00;
     width: 40%;
     height: 1px;
     margin-left: auto;
     margin-right: auto;
     z-index: 1;
+    animation: slideDown 1.5s;
 }
 .rightImgContainer {
     width: 25%;
@@ -229,23 +234,142 @@ ul.mobNav a li:hover {
 }
 
 .bioCardContainer {
-    border: 2px groove #d93c4165;
+    border: 2px double #ffe60065;
     border-radius: 85px;
     width: 35%;
     margin-left: auto;
     margin-right: auto;
     margin-top: 10%;
     overflow: hidden;
+    animation: slideDown 1.5s;
 }
 .bioCardContents {
-    background-image: url(/media/trees.jpg);
-    background-size: 100%;
+    
 }
 .bioLogo img {
     width: 25%;
     border-radius: 100%;
     margin: 10%;
 }
+
+.slideOne {
+    max-width: 35%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.firstSlide {
+    height: 25vw;
+    margin-top: 5%;
+    overflow: hidden;
+}
+
+.secondSlide {
+    height: 25vw;
+    margin-top: 5%;
+    overflow: hidden;
+}
+.slideTwo {
+    max-width: 25%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.thirdSlide {
+    margin-top: 5%;
+    overflow: hidden;
+}
+.slideThree {
+    max-width: 35%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.fourthSlide {
+    margin-top: 5%;
+    overflow: hidden;
+}
+.slideFour {
+    max-width: 35%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.fifthSlide {
+    height: 35vw;
+    margin-top: 5%;
+    overflow: hidden;
+}
+.slideFive {
+    max-width: 35%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.sixthSlide {
+    margin-top: 5%;
+    overflow: hidden;
+}
+.slideSix {
+    max-width: 35%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.seventhSlide {
+    margin-top: 5%;
+    overflow: hidden;
+}
+.slideSeven {
+    max-width: 35%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.eighthSlide {
+    height: 35vw;
+    margin-top: 5%;
+    overflow: hidden;
+}
+.slideEight {
+    max-width: 35%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.ninthSlide {
+    margin-top: 5%;
+    overflow: hidden;
+}
+.slideNine {
+    max-width: 35%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.tenthSlide {
+    height: 35vw;
+    margin-top: 5%;
+    overflow: hidden;
+}
+.slideTen {
+    max-width: 35%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.prevBtn {
+    color: red;
+}
+
+
+
+/***************** Load Effects *********************/
+
+@keyframes slideDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
+/***************** Load Effects END *********************/
 
 
 @media screen and (max-width: 4000px) {
