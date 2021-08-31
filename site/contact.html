@@ -23,15 +23,12 @@
         integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="styles/contact.css">
     <script src="js/home.js"></script>
-    <?php
-    if($_POST["Message"]) {
-    mail("domwitt21@gmail.com", "Here is the sample subject line",
-    $_POST["Insert Your Message"]. "From: jane@janedoe.com");
-    }
-    ?>
 </head>
 
 <body>
+    <?php
+        include("emailForm.php");
+    ?>
     <div class="mainPg">
         <header>
             <div class="mobileContainer">
@@ -115,9 +112,6 @@
             <input type="text" class="name formEntry" placeholder="Name" />
             <input type="text" class="email formEntry" placeholder="Email" />
             <textarea class="message formEntry" placeholder="Message"></textarea>
-            <input type="checkbox" class="termsConditions" value="Term">
-            <label style="color: grey" for="terms"> I Accept the <span style="color: #0e3721">Terms of Use</span> & <span
-                    style="color: #0e3721">Privacy Policy</span>.</label><br>
             <button class="submit formEntry" onclick="thanks()">Submit</button>
         </form>
     </div>
