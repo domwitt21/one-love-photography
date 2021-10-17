@@ -337,6 +337,26 @@ ul.mobNav a li:hover {
     margin-top: 5%;
 }
 
+.facePhoto {
+    width: 10%;
+    border-radius: 100%;
+    margin-left: 45%;
+    margin-top: 3%;
+}
+
+.bioMain {
+    width: 30%;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    justify-content: center;
+    margin-left: 35%;
+    margin-top: 2%;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    padding: 2%;
+    border-radius: 15%;
+    border: 1px double yellow;
+}
+
 /***************** Load Effects *********************/
 
 @keyframes slideDown {
