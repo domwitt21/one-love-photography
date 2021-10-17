@@ -483,4 +483,23 @@ ul.mobNav a li:hover {
   50% {
     transform: translate(0, 8px);
   }
-} 
+}
+
+.fBook {
+    width: 2%;
+    margin-top: 2%;
+    margin-left: 45%;
+}
+
+.insta {
+    width: 2%;
+    margin-left: 5%;
+    margin-top: 2%;
+}
+
+.logoFoot {
+    width: 5%;
+    position: absolute;
+    left: 5%;
+    margin-top: 2%;
+}
